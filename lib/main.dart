@@ -1,4 +1,4 @@
-import 'package:azlibrary/screens/welocmeSC.dart';
+import '../routes/myRoutes.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,23 +12,38 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
+        fontFamily: 'RobotoCondensed',
+        scaffoldBackgroundColor: Color.fromARGB(20, 232, 246, 239),
+        hoverColor: Color.fromARGB(200, 76, 76, 109),
         colorScheme: ThemeData.light().colorScheme.copyWith(
-              secondary: Color.fromARGB(255, 209, 114, 19),
-              primary: Color.fromARGB(255, 135, 14, 195),
+              secondary: Color.fromRGBO(255, 225, 148, .3),
+              primary: Color.fromRGBO(76, 76, 109, 1),
             ),
         textTheme: ThemeData.light().textTheme.copyWith(
-              bodyText1: TextStyle(color: Color.fromRGBO(150, 250, 100, .4)),
-              bodyText2: TextStyle(color: Color.fromRGBO(100, 250, 150, .1)),
-              headline1: TextStyle(fontSize: 24, fontFamily: 'RobotoCondensed'),
+              headline4: TextStyle(
+                color: Colors.white,
+                fontFamily: 'RobotoCondensed',
+                fontSize: 22,
+              ),
+              headline5: TextStyle(
+                color: Colors.white,
+                fontFamily: 'RobotoCondensed',
+                fontSize: 18,
+              ),
+              headline6: TextStyle(
+                color: Colors.white,
+                fontFamily: 'Raleway',
+                fontSize: 16,
+              ),
               button: TextStyle(
                   fontSize: 20,
                   fontFamily: 'Raleway',
                   fontWeight: FontWeight.bold,
-                  fontStyle: FontStyle.italic,
                   color: Colors.white),
             ),
       ),
-      home: WelcomeSC(),
+      //home: WelcomeSC(),
+      routes: myRoutes,
     );
   }
 }

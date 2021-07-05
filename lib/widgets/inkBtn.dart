@@ -9,10 +9,14 @@ class InkBtn extends StatelessWidget {
 
   InkBtn({required this.title, required this.color, required this.route});
 
+  moveto(context, routeName) {
+    Navigator.of(context).pushReplacementNamed(routeName);
+  }
+
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () {},
+      onTap: () => moveto(context, route),
       child: Container(
         padding: EdgeInsets.symmetric(horizontal: 30, vertical: 10),
         decoration: BoxDecoration(
