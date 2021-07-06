@@ -117,14 +117,13 @@ class WelcomeSC extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                InkBtn(title: "Login", color: ColorType.secondary, route: home),
+                InkBtn(
+                    title: "Login", color: ColorType.secondary, route: login),
                 SizedBox(
                   width: 50,
                 ),
                 InkBtn(
-                    title: "Sign up",
-                    color: ColorType.secondary,
-                    route: "route"),
+                    title: "Sign up", color: ColorType.secondary, route: sign),
               ],
             ),
             //----------------------------------------------------

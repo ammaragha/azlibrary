@@ -1,6 +1,6 @@
 import 'package:azlibrary/models/ui/libUI.dart';
 
-List<LibUI> libs = [
+List<LibUI> libsDum = [
   LibUI(id: 1, name: "All libraries"),
   LibUI(id: 2, name: "Faculty of Engineering"),
   LibUI(id: 3, name: "Faculty of Pharmacy"),

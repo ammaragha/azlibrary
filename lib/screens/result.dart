@@ -26,7 +26,7 @@ class _ResultState extends State<Result> {
         //-----------------------------
         //search section
         SearchSection(
-          dropitems: libs,
+          dropitems: libsDum,
         ), //will send all libs here and return APi from main Class
         //----------------------------------------------
         Divider(),

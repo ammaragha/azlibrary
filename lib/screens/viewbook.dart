@@ -98,7 +98,7 @@ class _ViewBookState extends State<ViewBook> {
                         padding: EdgeInsets.all(8),
                         child: SpanTxt(
                           span: "Borrowed",
-                          content: book.closest,
+                          content: book.borrowed,
                         ),
                       ),
                       //first book will be avilable

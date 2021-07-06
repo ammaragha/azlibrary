@@ -1,3 +1,4 @@
+import 'package:azlibrary/routes/myRoutes.dart';
 import 'package:flutter/material.dart';
 
 enum ColorType { primary, secondary }
@@ -10,7 +11,10 @@ class InkBtn extends StatelessWidget {
   InkBtn({required this.title, required this.color, required this.route});
 
   moveto(context, routeName) {
-    Navigator.of(context).pushReplacementNamed(routeName);
+    if (routeName == sign)
+      Navigator.of(context).pushNamed(routeName);
+    else
+      Navigator.of(context).pushReplacementNamed(routeName);
   }
 
   @override

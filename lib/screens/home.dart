@@ -30,7 +30,7 @@ class _MyHomeState extends State<MyHome> {
         //-----------------------------
         //search section
         SearchSection(
-          dropitems: libs,
+          dropitems: libsDum,
         ), //will send all libs here and return APi from main Class
         //----------------------------------------------
         Divider(),

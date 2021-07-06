@@ -50,9 +50,13 @@ class SideBar extends StatelessWidget {
                     routeName: profile),
                 TileBtn(title: "Phd Thesis", icon: Icons.book, routeName: phd),
                 TileBtn(title: "About us", icon: Icons.info, routeName: about),
+                Divider(
+                  color: Colors.white,
+                  height: 20,
+                ),
                 TileBtn(
-                    title: "Welcome",
-                    icon: Icons.star_border,
+                    title: "Logout",
+                    icon: Icons.arrow_back_rounded,
                     routeName: welcome),
                 // TileBtn(title: "Welcome", icon: Icons.home, routeName: welcome),
               ],
