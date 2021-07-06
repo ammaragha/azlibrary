@@ -1,10 +1,14 @@
+import '../models/ui/libUI.dart';
 import 'package:flutter/material.dart';
 
 class SearchSection extends StatefulWidget {
-  final List<String> dropitems;
-  String selectedLib;
+  final List<LibUI> dropitems;
+  var selectedLib = null;
+  static var id;
 
-  SearchSection({required this.dropitems, required this.selectedLib});
+  SearchSection({
+    required this.dropitems,
+  });
 
   @override
   _SearchSectionState createState() => _SearchSectionState();
@@ -13,6 +17,7 @@ class SearchSection extends StatefulWidget {
 class _SearchSectionState extends State<SearchSection> {
   @override
   Widget build(BuildContext context) {
+    List<LibUI> libs = this.widget.dropitems;
     return Container(
       width: double.infinity,
       padding: EdgeInsets.symmetric(horizontal: 100, vertical: 10),
@@ -37,13 +42,14 @@ class _SearchSectionState extends State<SearchSection> {
                   child: Container(
                     padding: EdgeInsets.only(right: 10),
                     child: DropdownButton<String>(
+                      hint: Text("All Libraries"),
                       value: this.widget.selectedLib, //current value
                       isExpanded: true,
-                      items: this.widget.dropitems.map((String value) {
+                      items: libs.map((e) {
                         return DropdownMenuItem<String>(
-                          value: value,
-                          child: new Text(
-                            value,
+                          value: e.id.toString(),
+                          child: Text(
+                            e.name,
                             style: TextStyle(
                                 color: Colors.grey,
                                 fontWeight: FontWeight.bold),

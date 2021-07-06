@@ -13,13 +13,18 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
         fontFamily: 'RobotoCondensed',
-        scaffoldBackgroundColor: Color.fromARGB(20, 232, 246, 239),
+        scaffoldBackgroundColor: Color.fromRGBO(20, 232, 246, 0),
         hoverColor: Color.fromARGB(200, 76, 76, 109),
         colorScheme: ThemeData.light().colorScheme.copyWith(
               secondary: Color.fromRGBO(255, 225, 148, .3),
               primary: Color.fromRGBO(76, 76, 109, 1),
             ),
         textTheme: ThemeData.light().textTheme.copyWith(
+              headline3: TextStyle(
+                color: Colors.black,
+                fontFamily: 'RobotoCondensed',
+                fontSize: 21,
+              ),
               headline4: TextStyle(
                 color: Colors.white,
                 fontFamily: 'RobotoCondensed',

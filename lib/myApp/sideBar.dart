@@ -44,12 +44,17 @@ class SideBar extends StatelessWidget {
             child: Column(
               children: [
                 TileBtn(title: "Home", icon: Icons.home, routeName: home),
-                TileBtn(title: "Welcome", icon: Icons.home, routeName: welcome),
-                TileBtn(title: "Welcome", icon: Icons.home, routeName: welcome),
-                TileBtn(title: "Welcome", icon: Icons.home, routeName: welcome),
-                TileBtn(title: "Welcome", icon: Icons.home, routeName: welcome),
-                TileBtn(title: "Welcome", icon: Icons.home, routeName: welcome),
-                TileBtn(title: "Welcome", icon: Icons.home, routeName: welcome),
+                TileBtn(
+                    title: "Profile",
+                    icon: Icons.person_pin,
+                    routeName: profile),
+                TileBtn(title: "Phd Thesis", icon: Icons.book, routeName: phd),
+                TileBtn(title: "About us", icon: Icons.info, routeName: about),
+                TileBtn(
+                    title: "Welcome",
+                    icon: Icons.star_border,
+                    routeName: welcome),
+                // TileBtn(title: "Welcome", icon: Icons.home, routeName: welcome),
               ],
             ),
           ),

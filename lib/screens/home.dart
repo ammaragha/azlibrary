@@ -1,7 +1,11 @@
 //import 'package:azlibrary/myApp/mydrop.dart';
 
-import 'package:azlibrary/myApp/expoList.dart';
+import 'package:azlibrary/dummy/libsDum.dart';
+import 'package:azlibrary/dummy/subjDum.dart';
+import 'package:azlibrary/widgets/sideTitle.dart';
 
+import '../models/ui/subjUI.dart';
+import '../myApp/expoList.dart';
 import '../myApp/shortNoteCard.dart';
 import '../myApp/searchSection.dart';
 import '../myApp/mainTilte.dart';
@@ -14,16 +18,7 @@ class MyHome extends StatefulWidget {
 }
 
 class _MyHomeState extends State<MyHome> {
-  static List<String> dropitems = [
-    "All libraries",
-    "faculty of Engineering",
-    "faculty of medicen",
-    "faculty of math",
-    "faculty of scince",
-    "faculty of pharmacy",
-    "faculty of physices",
-  ];
-  String _selectedLib = dropitems[0];
+  //String _selectedLib = dropitems[0].name;
   @override
   Widget build(BuildContext context) {
     return App(
@@ -35,9 +30,8 @@ class _MyHomeState extends State<MyHome> {
         //-----------------------------
         //search section
         SearchSection(
-            dropitems: dropitems,
-            selectedLib:
-                _selectedLib), //will send all libs here and return APi from main Class
+          dropitems: libs,
+        ), //will send all libs here and return APi from main Class
         //----------------------------------------------
         Divider(),
         // SizedBox(
@@ -55,18 +49,13 @@ class _MyHomeState extends State<MyHome> {
         //---------------------------------------------
 
         // Start Blind search Section
-        Container(
-          padding: EdgeInsets.all(20),
-          alignment: Alignment.topLeft,
-          child: Text(
-            "Blind Search: ",
-            style: TextStyle(fontSize: 22, color: Colors.grey),
-          ),
-        ),
+        SideTitle(title: "Blind Search : "),
         //-----------------------------
         Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 100),
-          child: ExpoList(),
+          padding: const EdgeInsets.symmetric(horizontal: 100, vertical: 50),
+          child: ExpoList(
+            subjects: subjs,
+          ),
         ),
       ],
     );

@@ -1,0 +1,43 @@
+import 'package:azlibrary/models/ui/bookUI.dart';
+
+List<BookUI> books = [
+  BookUI(
+    id: 1,
+    name: "Python",
+    description: "description",
+    avilable: 4,
+    auther: "ADAM BASH",
+    faculty: 2,
+    block: "a9",
+    borrowed: "1",
+    closest: "17 - 10 - 2021",
+    column: "1",
+    row: "2",
+  ),
+  BookUI(
+    id: 2,
+    name: "Java",
+    description: "description",
+    avilable: 3,
+    auther: "ADAM BASH",
+    faculty: 2,
+    block: "a9",
+    borrowed: "1",
+    closest: "17 - 10 - 2021",
+    column: "1",
+    row: "2",
+  ),
+  BookUI(
+    id: 3,
+    name: "Html",
+    description: "description",
+    avilable: 2,
+    auther: "ADAM BASH",
+    faculty: 2,
+    block: "a9",
+    borrowed: "1",
+    closest: "17 - 10 - 2021",
+    column: "1",
+    row: "2",
+  ),
+];

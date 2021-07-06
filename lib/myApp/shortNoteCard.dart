@@ -16,7 +16,7 @@ class ShortNoteCard extends StatelessWidget {
           begin: Alignment.bottomLeft,
           end: Alignment.topRight,
         ),
-        borderRadius: BorderRadius.circular(30),
+        borderRadius: BorderRadius.circular(15),
       ),
       width: double.infinity,
       child: Column(

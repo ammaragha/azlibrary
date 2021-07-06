@@ -20,7 +20,7 @@ class App extends StatelessWidget {
                 Container(
                   color: Colors.white,
                   child: Container(
-                    color: Color.fromRGBO(255, 225, 148, .3),
+                    color: Color.fromRGBO(238, 235, 221, .3),
                     child: Column(
                       children: this.content,
                     ),
